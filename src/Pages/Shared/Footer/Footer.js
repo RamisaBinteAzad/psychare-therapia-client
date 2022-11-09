@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </h6>
-                <p className="text-dark fw-bold">
+                <p className="text-muted fw-bold">
                   Being a full-time psychologist, I make my patients feel
                   special so they can discuss their problems openly. My goal is
                   to help people fighting their fears and life issues.
@@ -71,22 +71,34 @@ const Footer = () => {
                   <hr />
                 </h6>
                 <p>
-                  <Link to="#!" className="text-dark  fw-bold">
+                  <Link
+                    to="#!"
+                    className="text-muted text-decoration-none  fw-bold"
+                  >
                     Individual Counseling
                   </Link>
                 </p>
                 <p>
-                  <Link to="#!" className="text-dark  fw-bold">
+                  <Link
+                    to="#!"
+                    className="text-muted text-decoration-none  fw-bold"
+                  >
                     Couples Counselling
                   </Link>
                 </p>
                 <p>
-                  <Link to="#!" className="text-dark  fw-bold">
+                  <Link
+                    to="#!"
+                    className="text-muted text-decoration-none fw-bold"
+                  >
                     Family Therapy
                   </Link>
                 </p>
                 <p>
-                  <Link to="#!" className="text-dark  fw-bold">
+                  <Link
+                    to="#!"
+                    className="text-muted text-decoration-none fw-bold"
+                  >
                     Child & Teen Therapy
                   </Link>
                 </p>
@@ -96,21 +108,21 @@ const Footer = () => {
                   Contact Details
                   <hr />
                 </h6>
-                <p className="text-dark fw-bold">
+                <p className="text-muted fw-bold">
                   <FaHome className="faFacebook me-3"></FaHome>
                   Hotel Suite Palace, House# 31, Road# 13, Block# K Baridhara,
                   Dhaka 1212
                 </p>
-                <p className="text-dark fw-bold">
+                <p className="text-muted fw-bold">
                   <FaEnvelope className="faFacebook me-3"></FaEnvelope>
                   info@example.com
                 </p>
-                <p className="text-dark fw-bold">
+                <p className="text-muted fw-bold">
                   <FaPhoneAlt className="faFacebook me-3"></FaPhoneAlt>
                   +01777-772763
                 </p>
 
-                <p className="text-dark fw-bold">
+                <p className="text-muted fw-bold">
                   <FaClock className="faFacebook me-3"></FaClock>
                   Mon - Fri: ( 9am - 6pm ) Sat & Sun: CLOSED
                 </p>

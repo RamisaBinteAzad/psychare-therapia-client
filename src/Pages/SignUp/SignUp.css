@@ -1,0 +1,22 @@
+.bg-register{
+    background-image: url('../../assets/images/login.jpg');
+  
+   width:100vw;
+   height:100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+.text-orange{
+    color:#F28C28;
+}
+.text-pale-lime-green{
+   color:#FFFFBC;
+    /* color:#c3ffc4; */
+}
+.text-light-blue{
+    color:#B9D3EE;
+   
+}

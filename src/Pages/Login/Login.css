@@ -1,0 +1,37 @@
+.bg-login{
+    
+    
+     background-image: url('../../assets/images/SignUp.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+.divider-container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto;
+}
+.line {
+  height: 2px;
+ background: #d4277e;
+  width: 100%;
+}
+.title2 {
+
+   color:#090761;
+   display: block;
+}
+.btn-bg-navy{
+   
+ background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+ color:white;
+
+
+   
+};
+

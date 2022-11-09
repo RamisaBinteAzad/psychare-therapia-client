@@ -1,12 +1,23 @@
+import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Image, Nav, Navbar } from "react-bootstrap";
+import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from '../../../assets/icons/psychology.png'
+import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 import './Header.css'
  
  
 
 const Header = () => {
+  
+  const { user, logOut } = useContext(AuthContext);
+   const handleLogOut = () => {
+     logOut()
+       .then(() => {})
+       .catch((error) => console.error(error));
+   };
    
   return (
     <Navbar
@@ -36,13 +47,65 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className=" mx-auto fs-5 fw-bold ">
-            <Link className="nav-style-home hover-link me-lg-4" to="/">
+            <Link className="nav-style-home hover-link me-5" to="/">
               Home
             </Link>
 
-            {/* <Link className="nav-style  me-lg-4" to="/courses">
-              Courses
+            <>
+              {user?.uid ? (
+                <>
+                  <span>{user?.displayName}</span>
+
+                  <button
+                    type="button"
+                    onClick={handleLogOut}
+                    className=" rounded   btn  border-0 text-white btn-bg-pink   mx-5 px-3    "
+                  >
+                    Log Out
+                    <FontAwesomeIcon
+                      className="ms-2"
+                      icon={faSignInAlt}
+                    ></FontAwesomeIcon>
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link className="pink  me-5" to="/login">
+                    Login
+                  </Link>
+                  <Link to="/signup">
+                    
+                    <button
+                      //   type="button"
+                      className=" btn btn-bg-navy text-white  border-0  rounded me-5 p-2"
+                    >
+                      Sign Up
+                      <FontAwesomeIcon
+                        className="ms-2"
+                        icon={faSignInAlt}
+                      ></FontAwesomeIcon>
+                    </button>
+                  </Link>
+                </>
+              )}
+            </>
+            <Link>
+              {user ? (
+                <Image
+                  style={{ height: "30px" }}
+                  roundedCircle
+                  src={user?.photoURL}
+                  className="img-fluid "
+                  title={user?.displayName}
+                ></Image>
+              ) : (
+                <FaUser></FaUser>
+              )}
             </Link>
+
+            {/* { <Link className="nav-style  me-lg-4" to="/courses">
+              Courses
+            </Link> }
             <Link className="nav-style  me-lg-4" to="/faq">
               FAQ
             </Link>

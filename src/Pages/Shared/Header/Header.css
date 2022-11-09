@@ -31,6 +31,11 @@ body{
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+.pink:hover{
+  background:  rgb(23, 151, 151) -15.1%;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav-style-home{
    background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
     -webkit-background-clip: text;

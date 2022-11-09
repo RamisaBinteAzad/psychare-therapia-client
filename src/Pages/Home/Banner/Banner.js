@@ -142,7 +142,7 @@ const Banner = () => {
                       ></FontAwesomeIcon>
                     </button>
                   </Link>
-                  <Link to="/">
+                  <Link to="/signup">
                     <button
                       //   type="button"
                       className=" rounded  btn-bg-white border-0   px-3 py-2"
