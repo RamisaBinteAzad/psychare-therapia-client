@@ -12,18 +12,18 @@ const Banner = () => {
   return (
     <div
       id="carouselExampleControls"
-      className="carousel slide height-change w-100  "
+      className="carousel slide height-change w-100   "
       data-bs-ride="carousel"
     >
       <div className="carousel-inner    ">
         <div className="carousel-item active    ">
-          <div className="card   text-bg-dark border-0 ">
+          <div className="card   text-bg-dark border-0 h-100 w-100  ">
             <img
               src={img1}
               className="card-img img-fluid opacity  w-100 h-100"
               alt=""
             />
-            <div className="card-img-overlay   container align-items-center     d-none d-md-flex ">
+            <div className="card-img-overlay container align-items-center     d-none d-md-flex ">
               <div className="header">
                 <h1 className="display-4   text-light">Better Advice for</h1>
 
@@ -64,7 +64,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="card-img-overlay d-flex  container     d-md-none d-flex py-auto mx-auto ">
+            <div className="card-img-overlay d-flex  container  py-4 px-5  d-md-none d-flex py-auto mx-auto ">
               <div className="header ">
                 <h2 className="   ">Better Advice for</h2>
 
@@ -74,14 +74,13 @@ const Banner = () => {
                 <h2 className="">Relationships</h2>
 
                 <span>
-                  <small className="text-gray   ">
-                    Mental Health is a majorn concern nowadays,
+                  <small className="text-gray ">
+                    Mental Health is a majorn concern nowadays,which
                     <br />
-                    which can end up affecting relations
-                    <br />& giving diseases.
+                    can end up affecting relations & giving diseases.
                   </small>
                 </span>
-                <div className="">
+                <div className="mt-2">
                   <Link to="/">
                     <button
                       type="button"
@@ -158,7 +157,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="card-img-overlay d-flex  container  border    d-md-none d-flex py-auto mx-auto ">
+            <div className="card-img-overlay d-flex  container  border   py-4 px-5   d-md-none d-flex py-auto mx-auto ">
               <div className="header ">
                 <h2 className="   ">Transform your</h2>
 
@@ -212,7 +211,7 @@ const Banner = () => {
               alt=""
             />
 
-            <div className="card-img-overlay d-flex container align-items-center  d-none d-md-flex   ">
+            <div className="card-img-overlay   container   align-items-center  d-none d-md-flex   ">
               <div className="">
                 <h1 className="display-4   text-light">Help family members</h1>
                 <h3 className="display-5   text-light">
@@ -254,7 +253,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="card-img-overlay d-flex  container  border    d-md-none d-flex py-auto mx-auto ">
+            <div className="card-img-overlay d-flex  container  border  py-4 px-5   d-md-none d-flex py-auto mx-auto ">
               <div className="header ">
                 <h2 className="   ">Help family members</h2>
 

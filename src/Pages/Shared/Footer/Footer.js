@@ -7,7 +7,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className="bg-light shadow-lg">
-      <footer className="text-center text-lg-start  text-muted">
+      <footer className=" text-lg-start  text-muted">
         <section className="d-flex justify-content-center justify-content-lg-between p-4  ">
           {/* <div className="me-5 d-none d-lg-block  text-white me-auto">
             <span className="text-center">
@@ -17,7 +17,7 @@ const Footer = () => {
         </section>
 
         <section className="">
-          <div className="container text-center text-md-start mt-5">
+          <div className="container   text-md-start mt-5">
             <div className="row mt-3">
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase text-white fw-bold mb-4">
