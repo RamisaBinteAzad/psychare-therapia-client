@@ -66,12 +66,12 @@ const Banner = () => {
             </div>
             <div className="card-img-overlay d-flex  container  py-4 px-5  d-md-none d-flex py-auto mx-auto ">
               <div className="header ">
-                <h2 className="   ">Better Advice for</h2>
+                <h3 className="   ">Better Advice for</h3>
 
-                <h3 className="">
+                <h4 className="">
                   <i>Healthy And Happier </i>
-                </h3>
-                <h2 className="">Relationships</h2>
+                </h4>
+                <h3 className="">Relationships</h3>
 
                 <span>
                   <small className="text-gray ">
@@ -157,14 +157,14 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="card-img-overlay d-flex  container  border   py-4 px-5   d-md-none d-flex py-auto mx-auto ">
+            <div className="card-img-overlay d-flex  container      py-4 px-5   d-md-none d-flex py-auto mx-auto ">
               <div className="header ">
-                <h2 className="   ">Transform your</h2>
+                <h3 className="   ">Transform your</h3>
 
-                <h3 className="">
+                <h2 className="">
                   <i>Mindset & Achieve </i>
-                </h3>
-                <h2 className="">your Goals.</h2>
+                </h2>
+                <h3 className="">your Goals.</h3>
 
                 <span>
                   <small className="text-gray   ">
@@ -253,14 +253,14 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="card-img-overlay d-flex  container  border  py-4 px-5   d-md-none d-flex py-auto mx-auto ">
+            <div className="card-img-overlay   container     py-4 px-5   d-md-none d-flex py-auto mx-auto ">
               <div className="header ">
-                <h2 className="   ">Help family members</h2>
+                <h3 className="   ">Help family members</h3>
 
-                <h3 className="">
+                <h4 className="">
                   <i>improve communication</i>
-                </h3>
-                <h2 className=""> and resolve conflicts.</h2>
+                </h4>
+                <h3 className=""> and resolve conflicts.</h3>
 
                 <span>
                   <small className="text-gray   ">

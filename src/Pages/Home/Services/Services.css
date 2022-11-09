@@ -1,0 +1,9 @@
+.pink{
+   background: linear-gradient(102.2deg, rgb(252, 40, 154) -9.9%, rgb(196, 77, 112) 34.7%, rgb(223, 149, 134) 89.1%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.dark-pink{
+    color:rgb(252, 40, 154);
+}

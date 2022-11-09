@@ -1,0 +1,59 @@
+[
+    {
+        
+        "service_id": "01",
+        "title": "Individual Counseling",
+        "img": "https://i.ibb.co/Z6YVJbD/Individual-Counselinglarge.jpg",
+        "price": "22.48",
+        "description": "Individual Counselling is a type of psychological or talk intervention that aims to help one make sense of their feelings, behaviours and thoughts. This is done in order to find a better way of navigating through adulthood, adolescence, or childhood. Counselling is a professional environment where the client feels safe, and understood and is able to share their thoughts and feelings without fear of judgement. Here one can get the mental health support they need.",
+       "ratings": 4.8
+        
+    },
+    {
+        
+        "service_id": "02",
+        "title": " Couples Counselling ",
+        "img": "https://i.ibb.co/4fJfLSv/couple-therapy.jpg",
+        "price": "32.16",
+        "description": "In this programme you will work through a structured set of practical exercises and activities to build a Healthy Marriage Foundation. It is thus an investment both you and your partner will benefit from. Undoubtedly, a safe and neutral space to identify and address any potential areas of conflict in your relationship. It also allows you to develop an understanding and explore the expectations of marriage.",
+        "ratings": 4.5
+    },
+    {
+        
+        "service_id": "03",
+        "title": "Family   therapy",
+        "img": "https://i.ibb.co/2FrVnqL/counseling-services-family-therapy-1.jpg",
+        "price": "20.00",
+        "description": "Families often have patterns of communicating or behaving that lead to reoccurring conflict. Sometimes there is trauma or a crisis – perhaps abuse, addiction, divorce, financial struggles or children’s behavior problems – that the family realizes they are not equipped to deal with on their own.Through therapy you can explore your family’s roles, rules and behavior patterns. You will identify issues that are contributing to conflict.It will help improve your family’s ability to solve problems and communicate so you can have a more healthy, loving and supportive home environment.",
+         "ratings": 4.6
+        
+    },
+    {
+        
+        "service_id": "04",
+        "title": "Child Teen Therapy",
+        "img": "https://i.ibb.co/8P3dfrJ/home-hero-bg.jpg",
+        "price": "70",
+        "description": "Childhood, adolescence, and teenage years are filled with many changes in thoughts, feelings, and behaviors. It is a time of constant transition. Sometimes challenges arise that disrupt the developmental path. These challenges may stem from stressors such as school, parental discord, divorce, illness, learning difficulties, peer pressure, bullying, changing homes, and other transitions. Through the safety and trust established with a Care and Counseling therapist, children learn to identify the causes of their distress, to identify and express their emotions, to ask for help when needed, and to improve their problem-solving abilities.",
+          "ratings":4.3
+    },
+    {
+        
+        "service_id": "05",
+        "title": "Anxiety Counselling",
+        "img": "https://i.ibb.co/JjCfk1Q/anxiety-counselling.jpg",
+        "price": "20.00",
+        "description": "Anxiety can be overwhelming at times. One of the most difficult aspects of struggling with overwhelming anxiety is how it can limit so many areas of your life. This anxiety counselling service can help you to learn how to manage your anxiety, instead of it managing you.It is normal to get a bit anxious from time to time, but too much anxiety can be debilitating.  You are constantly under the control of worry and fear. Your life is dictated by the avoidance of certain situations or certain things.You may suffer from panic attacks, waves of fear that come on suddenly, seemingly out of nowhere. You may be experiencing nausea, tension, heart palpitations, dizziness or other physical symptoms.",
+        "ratings":4.1
+    },
+    {
+        
+        "service_id": "06",
+        "title": "Trauma Counselling ",
+        "img": "https://i.ibb.co/DgY8R0B/Trauma-Therapy.webp",
+        "price": "24.00",
+        "description": "Trauma occurs when someone experiences a shock that creates lasting distress, and often PTSD can develop.  PTSD and trauma counselling can help us understand and address the trauma. After an extremely traumatic event, it is normal to feel anxious and depressed, and such an event can also lead to a prolonged condition known as PTSD. But when the agitation, the depression, or the anxiety sticks around past its welcome, it becomes a problem. If this describes what you are currently experiencing, consider calling us or using the tool to the right to book an appointment.Many suffers of PTSD (Post Traumatic Stress Disorder) may experience flashbacks or terrible nightmares. They may be plagued with fear and anxiety when presented with objects or surroundings that remind them of the event. They may experience wild mood swings, combined with self-destructive behaviour. If you’re currently experiencing trauma or PTSD, you may feel as though your symptoms will never end. You likely feel constantly on edge, waiting for something similar to your traumatic event to reoccur. You are likely experiencing horrible, recurring memories of the event. Luckily, there is help. This trauma counselling   can help you address the mental scarring that has left you shaken.",
+         "ratings":4.7
+         
+    }
+]

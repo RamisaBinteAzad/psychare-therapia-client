@@ -77,7 +77,7 @@ const Footer = () => {
                 </p>
                 <p>
                   <Link to="#!" className="text-dark  fw-bold">
-                    Marriage Counseling
+                    Couples Counselling
                   </Link>
                 </p>
                 <p>
