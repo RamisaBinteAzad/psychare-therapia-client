@@ -29,7 +29,18 @@ const Login = () => {
              .then((error) => console.log(error));
          
          navigate(from, { replace: true });
-     };
+  };
+  const { googleSignIn } = useContext(AuthContext);
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        
+      })
+      .catch((error) => console.error(error));
+  };
+
 
 
     return (
@@ -51,7 +62,7 @@ const Login = () => {
                     </p>
 
                     <Button
-                      //   onClick={handleGoogleSignIn}
+                        onClick={handleGoogleSignIn}
                       className="text-center me-2 ms-5 btn-color-change-google"
                       variant="outline-primary"
                     >

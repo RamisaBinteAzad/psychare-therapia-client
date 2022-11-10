@@ -12,6 +12,9 @@ const AuthProvider = ({children}) => {
     // user ache kina seta check korar jonno
     const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const googleProvider = new GoogleAuthProvider();
+    
+
   // SignUp
   const createUser = (email, password) => {
       setLoading(true);

@@ -5,27 +5,30 @@ import { Link } from "react-router-dom";
 import { PhotoProvider, PhotoView } from "react-photo-view";
  
 const ServiceCard = ({ service }) => {
-  const { price, img, title, description, ratings } = service;
+  const { price, img, title, description, ratings,_id } = service;
     return (
       <div>
         <Col>
-          <Card className="mb-5 h-100 shadow ">
+          <Card className=" shadow ">
             <PhotoProvider>
               <PhotoView src={img}>
-                <Card.Img variant="top" className="h-100 w-100" src={img} />
+                <Card.Img variant="top" className="img-fluid h-100" src={img} />
               </PhotoView>
             </PhotoProvider>
 
-            <Card.Body className="p-4">
-              <Card.Title className="dark-blue fs-3 ">{title}</Card.Title>
+            <Card.Body className="px-4">
+              <Card.Title className="dark-blue fs-4 fw-bold py-3  ">
+                {title}
+                <hr />
+              </Card.Title>
 
-              <Card.Text className="text-muted  my-2 text-justify ">
+              <Card.Text className="text-muted pb-2 ">
                 {description.length > 100 ? (
                   <>
                     {description.slice(0, 100) + "..."} <br />
-                    <Button variant="rounded  mt-2 btn   border-0 text-white btn-bg-pink    px-3 ">
+                    <Button variant="rounded  my-2 btn mt-3  border-0 text-white btn-bg-pink    px-3 ">
                       <Link
-                        //   to={`/singleCourse/${id}`}
+                        to={`/services/${_id}`}
                         className="text-decoration-none text-white"
                       >
                         View Details
@@ -51,10 +54,6 @@ const ServiceCard = ({ service }) => {
                   <span className="  h1 pink">${price}</span>
                 </div>
               </div>
-              {/* <div>
-              <FaEye className="me-2"></FaEye>
-              <span>{total_view}</span>
-            </div> */}
             </Card.Footer>
           </Card>
         </Col>

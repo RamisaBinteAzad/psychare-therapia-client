@@ -50,11 +50,14 @@ const Header = () => {
             <Link className="nav-style-home hover-link me-5" to="/">
               Home
             </Link>
+            <Link className="nav-style  pink  me-5" to="/blog">
+              Blogs
+            </Link>
 
             <>
               {user?.uid ? (
                 <>
-                  <span className='pink'>{user?.displayName}</span>
+                  <span className="pink">{user?.displayName}</span>
 
                   <button
                     type="button"
@@ -74,7 +77,6 @@ const Header = () => {
                     Login
                   </Link>
                   <Link to="/signup">
-                    
                     <button
                       //   type="button"
                       className=" btn btn-bg-navy text-white  border-0  rounded me-5 p-2"
@@ -103,43 +105,7 @@ const Header = () => {
               )}
             </Link>
 
-            {/* { <Link className="nav-style  me-lg-4" to="/courses">
-              Courses
-            </Link> }
-            <Link className="nav-style  me-lg-4" to="/faq">
-              FAQ
-            </Link>
-            <Link className="nav-style  me-lg-4" to="/blog">
-              Blog
-            </Link> */}
-
-            {/* <Switch className="switch" onChange={toggleTheme}></Switch> */}
-
-            {/* <>
-              {user?.uid ? (
-                <>
-                  <span>{user?.displayName}</span>
-                  <button
-                    type="button"
-                    onClick={handleLogOut}
-                    className="btn btn-danger  w-25 mx-3    "
-                  >
-                    Log Out
-                    <FontAwesomeIcon
-                      className="ms-2"
-                      icon={faSignInAlt}
-                    ></FontAwesomeIcon>
-                  </button>
-                </>
-              ) : (
-                <>
-                  <Link className="nav-style  me-lg-4" to="/login">
-                    Log In
-                  </Link>
-                  
-                </>
-              )}
-            </> */}
+             
           </Nav>
         </Navbar.Collapse>
       </Container>

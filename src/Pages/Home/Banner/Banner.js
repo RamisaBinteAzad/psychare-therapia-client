@@ -64,23 +64,22 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="card-img-overlay d-flex  container  py-4 px-5  d-md-none d-flex py-auto mx-auto ">
+            <div className="card-img-overlay d-flex  container  py-4 px-5  d-md-none d-flex py-auto mx-auto height-change">
               <div className="header ">
-                <h3 className="   ">Better Advice for</h3>
+                <h4 className="   ">Better Advice for</h4>
 
-                <h4 className="">
+                <h5 className="">
                   <i>Healthy And Happier </i>
-                </h4>
-                <h3 className="">Relationships</h3>
+                </h5>
+                <h4 className="">Relationships</h4>
 
-                <span>
+                {/* <span>
                   <small className="text-gray ">
-                    Mental Health is a majorn concern nowadays,which
-                    <br />
-                    can end up affecting relations & giving diseases.
+                    Mental Health is a majorn concern nowadays,which can end up
+                    affecting relations & giving diseases.
                   </small>
-                </span>
-                <div className="mt-2">
+                </span> */}
+                <div className="mt-1">
                   <Link to="/">
                     <button
                       type="button"
@@ -166,13 +165,13 @@ const Banner = () => {
                 </h2>
                 <h3 className="">your Goals.</h3>
 
-                <span>
-                  <small className="text-gray   ">
+               
+                  {/* <small className="text-gray   ">
                     Amazing therapies and advice to help you achieve your
                     <br />
                     goals and taking important decisions of your life.
-                  </small>
-                </span>
+                  </small> */}
+                
                 <div className="mt-2">
                   <Link to="/">
                     <button
@@ -262,13 +261,13 @@ const Banner = () => {
                 </h4>
                 <h3 className=""> and resolve conflicts.</h3>
 
-                <span>
+                {/* <span>
                   <small className="text-gray   ">
                     Learn new ways to to deepen family connections and
                     <br />
                     overcome unhealthy patterns of relating to each other.
                   </small>
-                </span>
+                </span> */}
                 <div className="mt-2">
                   <Link to="/">
                     <button
