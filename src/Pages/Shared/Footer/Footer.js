@@ -16,7 +16,7 @@ const Footer = () => {
           </div> */}
         </section>
 
-        <section className="">
+        <section className="mb-4">
           <div className="container   text-md-start mt-5">
             <div className="row mt-3">
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
@@ -158,7 +158,7 @@ const Footer = () => {
                   Book Appointment
                   <hr />
                 </h6>
-                <div className="border grayish-bg-pink w-lg-100  py-3 px-2 mb-2 rounded shadow">
+                <div className="border grayish-bg-pink w-lg-100 text-center py-3 px-2 mb-2 rounded shadow">
                   <p className="text-uppercase faFacebook fw-bold">
                     Let's Chat{" "}
                   </p>

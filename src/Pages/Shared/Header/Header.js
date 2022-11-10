@@ -54,7 +54,7 @@ const Header = () => {
             <>
               {user?.uid ? (
                 <>
-                  <span>{user?.displayName}</span>
+                  <span className='pink'>{user?.displayName}</span>
 
                   <button
                     type="button"

@@ -21,8 +21,8 @@ const Services = () => {
             A Positive Change In Your Life.
           </p>
         </div>
-        <Container>
-          <Row xs={1} md={2} lg={3} className="g-4">
+        <Container >
+          <Row xs={1} md={2} lg={3} className="g-4 mb-5">
             {services.map((service) => (
               <ServiceCard key={service._id} service={service}></ServiceCard>
             ))}

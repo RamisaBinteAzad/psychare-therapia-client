@@ -16,7 +16,10 @@ import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const SignUp = () => {
      const [error, setError] = useState("");
-     const [accepted, setAccepted] = useState(false);
+    const [accepted, setAccepted] = useState(false);
+    const navigate = useNavigate();
+     const location = useLocation();
+    const from = location.state?.from?.pathname || "/login";
      const { createUser, updateUserProfile} =
        useContext(AuthContext);
       const handleSignUp = (event) => {
@@ -41,6 +44,7 @@ const SignUp = () => {
               console.error(e);
               setError(e.message);
             });
+           navigate(from, { replace: true });
     };
       const handleUpdateUserProfile = (name, photoURL) => {
         const profile = {
