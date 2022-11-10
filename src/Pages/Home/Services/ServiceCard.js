@@ -2,14 +2,20 @@ import React from "react";
 import { Button, Card, Col, Image } from "react-bootstrap";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { PhotoProvider, PhotoView } from "react-photo-view";
+ 
 const ServiceCard = ({ service }) => {
   const { price, img, title, description, ratings } = service;
     return (
       <div>
         <Col>
           <Card className="mb-5 h-100 shadow ">
-            <Card.Img variant="top" className="h-100 w-100" src={img} />
+            <PhotoProvider>
+              <PhotoView src={img}>
+                <Card.Img variant="top" className="h-100 w-100" src={img} />
+              </PhotoView>
+            </PhotoProvider>
+
             <Card.Body className="p-4">
               <Card.Title className="dark-blue fs-3 ">{title}</Card.Title>
 
@@ -51,8 +57,7 @@ const ServiceCard = ({ service }) => {
             </div> */}
             </Card.Footer>
           </Card>
-            </Col>
-            
+        </Col>
       </div>
     );
 };
