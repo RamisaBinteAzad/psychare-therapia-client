@@ -1,9 +1,11 @@
 import React from 'react';
 import { Card, Col, Image } from 'react-bootstrap';
 import { FaQuoteLeft, FaQuoteRight, FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import useTitle from '../../hooks/useTitle';
 import './Review.css'
 
 const Review = ({ review }) => {
+   useTitle("Review ");
     const {
       comment,
       customer,

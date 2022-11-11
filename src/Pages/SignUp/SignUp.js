@@ -14,11 +14,13 @@ import {
 import "./SignUp.css";
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import toast from 'react-hot-toast';
+import useTitle from '../../hooks/useTitle';
 
 const SignUp = () => {
      const [error, setError] = useState("");
     const [accepted, setAccepted] = useState(false);
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  useTitle("Sign Up ");
      const location = useLocation();
     const from = location.state?.from?.pathname || "/login";
      const { createUser, updateUserProfile} =

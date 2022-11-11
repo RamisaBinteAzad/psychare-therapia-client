@@ -16,6 +16,29 @@ const MyReviews = () => {
          .then((res) => res.json())
          .then((data) => setmyReviews(data));
      }, [user?.email]);
+    //  const handleStatusUpdate = (id) => {
+    //    fetch(`http://localhost:5000/myReviews/${id}`, {
+    //      method: "PATCH",
+    //      headers: {
+    //        "content-type": "application/json",
+    //      },
+    //      body: JSON.stringify({  }),
+    //    })
+    //      .then((res) => res.json())
+    //      .then((data) => {
+    //        console.log(data);
+    //        if (data.modifiedCount > 0) {
+              
+    //          const remaining = myReviews.filter((odr) => odr._id !== id);
+    //          const approving = myReviews.find((odr) => odr._id === id);
+    //          approving.status = "Approved";
+
+    //          const newOrders = [approving, ...remaining];
+    //          setmyReviews(newOrders);
+    //        }
+    //      });
+    //  };
+
      const handleDelete = (id) => {
        const proceed = window.confirm(
          "Are you sure, you want to cancel this order"
@@ -67,6 +90,7 @@ const MyReviews = () => {
                   key={myReview._id}
                   myReview={myReview}
                   handleDelete={handleDelete}
+                //   handleStatusUpdate={handleStatusUpdate}
                 ></MyReviewsRow>
               ))}
             </Row>

@@ -14,11 +14,13 @@ import toast, { Toaster } from "react-hot-toast";
 import { FaGoogle } from "react-icons/fa";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 import "./Login.css";
 
 const Login = () => {
   const [error, setError] = useState("");
   const { login, setLoading, user } = useContext(AuthContext);
+   useTitle("Login ");
    
   const location = useLocation();
   // <Navigate to="/location" state={{ from: login }} replace></Navigate>;
