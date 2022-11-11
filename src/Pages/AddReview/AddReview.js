@@ -70,7 +70,7 @@ const AddReview = ({id, title }) => {
         setLoading(false);
       });
   };
-
+  
       
     return (
       <div>

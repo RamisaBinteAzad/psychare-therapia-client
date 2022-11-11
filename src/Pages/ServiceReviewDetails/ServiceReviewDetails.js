@@ -80,6 +80,7 @@ const ServiceReviewDetails = () => {
                 id={_id}
                 title={title}
                 ratings={ratings}
+                
               ></AddReview>
               {/* <img
                 src="https://www.redpoints.com/wp-content/uploads/2019/07/fake-amazon-reviews.png"

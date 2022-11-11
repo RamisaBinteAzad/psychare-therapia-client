@@ -46,11 +46,11 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className=" mx-auto fs-5 fw-bold ">
-            <Link className="nav-style-home hover-link me-5" to="/">
+          <Nav className="nav-font mx-auto fs-5 fw-bold ">
+            <Link className="nav-style-home hover-link me-4" to="/">
               Home
             </Link>
-            <Link className="nav-style  pink  me-5" to="/blog">
+            <Link className="nav-style  pink  me-4" to="/blog">
               Blogs
             </Link>
 
@@ -58,7 +58,12 @@ const Header = () => {
               {user?.uid ? (
                 <>
                   <span className="pink">{user?.displayName}</span>
-
+                  <Link className="nav-style  pink  ms-3 me-3" to="/myReviews">
+                    My Reviews
+                  </Link>
+                  <Link className="nav-style  pink " to="/addService">
+                   Add Service
+                  </Link>
                   <button
                     type="button"
                     onClick={handleLogOut}
@@ -91,7 +96,7 @@ const Header = () => {
                 </>
               )}
             </>
-            <Link>
+            <Link className='me-1'>
               {user ? (
                 <Image
                   style={{ height: "30px" }}
@@ -104,8 +109,6 @@ const Header = () => {
                 <FaUser></FaUser>
               )}
             </Link>
-
-             
           </Nav>
         </Navbar.Collapse>
       </Container>
