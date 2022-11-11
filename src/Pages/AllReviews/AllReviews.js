@@ -13,15 +13,17 @@ const AllReviews = ({ id }) => {
   useEffect(() => {
     fetch(`http://localhost:5000/reviews?service=${id}`)
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setReviews(data));
   }, [id]);
   return (
     <div>
-      <h2>hello</h2>
+      {/* // <Review key={review._id} review={review}></Review>   */}
       <Container>
         <Row xs={1} md={1} lg={1} className="g-4 mb-5">
           {reviews.map((review) => (
-            <Review key={review._id} review={review}></Review>
+            <Review key={id} review={review}>
+              
+            </Review>
           ))}
         </Row>
       </Container>

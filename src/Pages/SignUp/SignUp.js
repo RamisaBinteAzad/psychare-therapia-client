@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./SignUp.css";
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import toast from 'react-hot-toast';
 
 const SignUp = () => {
      const [error, setError] = useState("");
@@ -37,11 +38,13 @@ const SignUp = () => {
               setError("");
               console.log(user);
               form.reset();
+               toast.success("Sign Up Successfully");
               handleUpdateUserProfile(name, photoURL);
               
             })
             .catch((e) => {
               console.error(e);
+               toast.error(`${error.message}`);
               setError(e.message);
             });
            navigate(from, { replace: true });
@@ -165,7 +168,7 @@ const SignUp = () => {
                     </Button>
                   </div>
 
-                  <Form.Text className="text-danger">{/* {error} */}</Form.Text>
+                  <Form.Text className="text-danger">{error}</Form.Text>
                 </Form>
               </div>
             </Container>
