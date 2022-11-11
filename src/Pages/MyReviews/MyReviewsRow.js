@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Card, Col, Image } from 'react-bootstrap';
-import { FaEdit, FaStar, FaStarHalfAlt, FaTrash } from 'react-icons/fa';
-import { PhotoProvider, PhotoView } from 'react-photo-view';
+import React, { useEffect, useState } from "react";
+import { Card, Col, Image } from "react-bootstrap";
+import { FaEdit, FaStar, FaStarHalfAlt, FaTrash } from "react-icons/fa";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const MyReviewsRow = ({ myReview, handleDelete }) => {
-    
   const {
     comment,
     customer,
@@ -19,12 +18,12 @@ const MyReviewsRow = ({ myReview, handleDelete }) => {
 
   const [reviewService, setreviewService] = useState({});
 
-  //  fetch(`http://localhost:5000/services/${service}`)
+  //  fetch(`https://psychare-therapia-server.vercel.app/services/${service}`)
   //      .then((res) => res.json())
   //      .then((data) => setOrderService(data));
   //  }, [service]);
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${service}`)
+    fetch(`https://psychare-therapia-server.vercel.app/services/${service}`)
       .then((res) => res.json())
       .then((data) => setreviewService(data));
   }, [service]);
@@ -59,7 +58,6 @@ const MyReviewsRow = ({ myReview, handleDelete }) => {
               >
                 <FaEdit className="faFacebook"></FaEdit>
               </button>
-             
             </Card.Header>
             <PhotoProvider>
               <PhotoView src={reviewService.img}>

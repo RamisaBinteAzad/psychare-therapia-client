@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
-import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-import Review from '../Review/Review';
+import React, { useContext, useEffect, useState } from "react";
+import { Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import Review from "../Review/Review";
 
 const AllReviews = ({ id }) => {
   const { user } = useContext(AuthContext);
@@ -11,7 +11,7 @@ const AllReviews = ({ id }) => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/reviews?service=${id}`)
+    fetch(`https://psychare-therapia-server.vercel.app/reviews?service=${id}`)
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [id]);
@@ -21,9 +21,7 @@ const AllReviews = ({ id }) => {
       <Container>
         <Row xs={1} md={1} lg={1} className="g-4 mb-5">
           {reviews.map((review) => (
-            <Review key={id} review={review}>
-              
-            </Review>
+            <Review key={id} review={review}></Review>
           ))}
         </Row>
       </Container>

@@ -57,15 +57,17 @@ const router = createBrowserRouter([
         path: "/services/:id",
         element: <ServiceReviewDetails></ServiceReviewDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://psychare-therapia-server.vercel.app/services/${params.id}`
+          ),
       },
     ],
   },
 ]);
 export default router;
 // <Link className="nav-style  pink  me-5" to="/myReviews">
-                  //   My Reviews
-                  // </Link>
-                  // <Link className="nav-style  pink  me-5" to="/addService">
-                  //  Add Service
-                  // </Link>
+//   My Reviews
+// </Link>
+// <Link className="nav-style  pink  me-5" to="/addService">
+//  Add Service
+// </Link>

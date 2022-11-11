@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import ServiceCard from './ServiceCard';
-import './Services.css'
+import React, { useEffect, useState } from "react";
+import { Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ServiceCard from "./ServiceCard";
+import "./Services.css";
 
 const Services = () => {
-    const [services, setServices] = useState([]);
-  
-    ;
+  const [services, setServices] = useState([]);
+
   // console.log(services);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://psychare-therapia-server.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   });
