@@ -32,11 +32,11 @@ const Services = () => {
         </Row>
         <div className="text-center">
           <Link to="/services">
-            <button className="btn btn-bg-navy text-white  border-0  btn-lg rounded  px-4 py-2">
-              See All
+            <button className="btn btn-bg-navy text-white  border-0  rounded  px-4 py-2">
+             See All
             </button>
           </Link>
-        </div>
+        </div>  
       </Container>
     </div>
   );

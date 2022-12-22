@@ -146,7 +146,7 @@ const Login = () => {
                     />
                   </Form.Group>
                   <div className="text-center">
-                    <button className="btn btn-bg-navy text-white  border-0  rounded w-50 p-2">
+                    <button className="btn btn-bg-navy text-white   border-0  rounded w-50 p-2">
                       Login
                     </button>
                   </div>

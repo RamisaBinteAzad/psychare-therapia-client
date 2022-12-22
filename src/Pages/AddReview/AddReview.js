@@ -121,7 +121,7 @@ const AddReview = ({ id, title }) => {
                 </Form.Group>
                 <div className="text-center mb-4">
                   <button
-                    className="btn btn-bg-pink text-white  border-0  rounded w-50 p-2"
+                    className="btn btn-bg-pink text-white  border-0 rounded w-50 p-2"
                     type="submit"
                   >
                     Add Review

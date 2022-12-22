@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import './AddService.css'
 // id
 // 636ca1a6b2ebcf3d8292fb9a
 // service_id

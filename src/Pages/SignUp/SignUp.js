@@ -162,7 +162,7 @@ const SignUp = () => {
                   <div className="text-center">
                     <Button
                       variant="primary"
-                      className="btn btn-bg-navy text-white  border-0  rounded w-50 p-2 text-center"
+                      className="btn btn-bg-navy  text-white  border-0  rounded w-50 p-2 text-center"
                       type="submit"
                       disabled={!accepted}
                     >
@@ -187,7 +187,7 @@ const SignUp = () => {
                   and feelings without fear of judgement.
                 </p>
                 <Link to="/login">
-                  <button className="btn btn-bg-pink border-0 text-white rounded-pill w-50 p-2">
+                  <button className="btn btn-bg-pink text-white border-0   rounded-pill w-50 p-2">
                     Sign in
                   </button>
                 </Link>

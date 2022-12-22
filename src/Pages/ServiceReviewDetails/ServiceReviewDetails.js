@@ -57,20 +57,12 @@ const ServiceReviewDetails = () => {
                         <span className="  h1 pink">${price}</span>
                       </div>
                     </div>
-                    {/* <div>
-              <FaEye className="me-2"></FaEye>
-              <span>{total_view}</span>
-            </div> */}
+                  
                   </Card.Footer>
                 </Card>
               </Col>
             </Container>
-            {/* {allServices.map((service) => (
-              <ServiceDetails
-                key={service._id}
-                service={service}
-              ></ServiceDetails>
-            ))} */}
+           
           </div>
 
           <div className=" col-12 col-lg-4  py-4 px-2 bg-dark-blue">
@@ -82,11 +74,7 @@ const ServiceReviewDetails = () => {
                 ratings={ratings}
                 
               ></AddReview>
-              {/* <img
-                src="https://www.redpoints.com/wp-content/uploads/2019/07/fake-amazon-reviews.png"
-                className='img-fluid w-50'
-                alt=""
-              /> */}
+             
              
             </>
           </div>

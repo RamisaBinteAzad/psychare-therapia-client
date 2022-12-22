@@ -21,9 +21,8 @@ const Header = () => {
    
   return (
     <Navbar
-      sticky="top"
       collapseOnSelect
-      className="shadow align-items-center py-0   "
+      className="shadow sticky-top align-items-center py-0   "
       expand="lg"
       bg="white"
       variant="light"
@@ -62,7 +61,7 @@ const Header = () => {
                     My Reviews
                   </Link>
                   <Link className="nav-style  pink " to="/addService">
-                   Add Service
+                    Add Service
                   </Link>
                   <button
                     type="button"
@@ -96,7 +95,7 @@ const Header = () => {
                 </>
               )}
             </>
-            <Link className='me-1'>
+            <Link className="me-1">
               {user ? (
                 <Image
                   style={{ height: "30px" }}
